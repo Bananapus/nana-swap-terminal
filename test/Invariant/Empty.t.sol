@@ -3,8 +3,10 @@ pragma solidity ^0.8.17;
 
 import "forge-std/Test.sol";
 
-contract EmptyTest_Unit is Test {
+contract EmptyTest_Invariant is Test {
     function setUp() public {}
 
-    function testTest() public {}
+    function testTest() public {
+        vm.skip(true);
+    }
 }
